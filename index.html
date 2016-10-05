@@ -2,28 +2,42 @@
 <html lang="en-us">
  <head>
     <meta charset="UTF-8">
-    <title>Mh webapp by acaever</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/uswds.min.css">
+    
+	<meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+    	
+	<!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+	
+		
+    
 </head>
 
  
 <body>
-<section class="page-header" class="usa-form">
+<CENTER>
+<div class="login-screen">
+<section  >
 
-    <select id="mySelect">
+    <select id="mySelect" class="btn btn-block btn-lg btn-info">
       <option value="GY">가영</option>
       <option value="MH">민희</option>
       <option value="HE">효은</option>
       <option value="JY">전율</option>
     </select> 
-    
-    <input type="text" class="usa-input-success" id="txt"> <!--검색어 입력박스-->
-    <input type="button" class="usa-button-big" id="btn" onclick="myFunction()"> <!--트위터검색-->
-    <input type="button" class="usa-button-big" id="btn2" onclick="myFunction2()"><!--인스타검색-->
+	<br>
+    <input type="text"  id="txt" class="form-control" > <!--검색어 입력박스--><br>
+    <input type="button" value = "twitter"   id="btn" onclick="myFunction()" class="btn btn-block btn-lg btn-inverse"> <!--트위터검색-->
+    <input type="button" value = "instagram" id="btn2" onclick="myFunction2()" class="btn btn-block btn-lg btn-inverse"><!--인스타검색-->
 
 </section>
-
+</div>
+</CENTER>
 
 <script>
 ////////////////////////////////////////////////////////////////////////
